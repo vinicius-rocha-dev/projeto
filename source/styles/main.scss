@@ -1,0 +1,136 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    max-width: 1024px;
+    margin: auto;
+}
+
+header{
+    padding: 8px;
+    position: sticky;
+    top: 0;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.menu{
+    display: flex;
+
+    &__item{
+        list-style-type: none;
+        padding: 8px;
+
+        .botao-meio{
+            padding: 8px;
+            border-left: 1px solid lightgray;
+            border-right: 1px solid lightgray;
+        }
+
+        a{
+            color: black;
+            text-decoration: none;
+            transition: 0.3s ease;
+            
+            &:hover{
+                color: darkred;
+            }
+        }
+    }
+}
+
+#alertas{
+    text-align: center;
+    nav{
+        text-align: center;
+        .tab__button{
+            padding: 8px;
+            width: 200px;
+            border: none;
+            background-color: #fff;
+            font-size: 20px;
+            text-transform: uppercase;
+            margin: 32px 1vw;
+            cursor: pointer;
+
+            &:hover{
+                
+            transform: scale(1.1);
+            }
+
+            &--is-active{
+                border-bottom: 5px solid black;
+            }
+        }    
+    }
+
+    .container{
+        text-align: start;
+    }
+
+    .tab__content{
+        display: none;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+
+        &--is-active{
+            display: grid;
+        }
+
+        li{
+            border-radius: 8px;
+            background-color: #e7e6e6;
+            list-style-type: none;
+            margin-bottom: 64px;
+            img{
+                max-width: 100%;
+                border-radius: 8px 8px 0 0;
+            }
+            .card-content{
+                padding: 30px;
+
+                h3{
+                    cursor: pointer;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+
+                p{
+                    margin: 16px 0;
+                }
+                
+                time{
+                    color: #929292;
+                    text-transform: uppercase;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    a{
+        text-align: center;
+        color: #929292;
+        text-decoration: none;
+        border: 1px solid gray;
+        padding: 5px 16px;
+        border-radius: 8px;
+
+        &:hover{
+            background-color: darkred;
+            border: none;
+            color: #fff;
+        }
+    }
+}
+
