@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto - Recode</title>
+    <link rel="stylesheet" href="build/styles/main.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Nome Projeto</h1>
+            <nav>
+                <ul class="menu">
+                    <li class="menu__item">
+                        <a href="#">Acesso à informação</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="botao-meio" rel="internal" href="cadastro.html">Cadastro</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#">Serviços</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="alertas">
+            <div class="container">
+                <nav>
+                    <button data-tab-button="alerta" class="tab__button tab__button--is-active">Alertas</button>
+                    <button data-tab-button="previsao" class="tab__button">Previsões</button>
+                </nav>
+                <ul data-tab-id="alerta" class="tab__content tab__content--is-active">
+                    <li>
+                        <img src="source/images/previsão.jpg" alt="Tempestade">
+                        <div class="card-content">
+                            <h3>Previsão para segunda-feira (28)</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit temporibus sapiente veniam optio esse..</p>
+                            <time>publicado em 26/10/2024</time>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="source/images/previsão.jpg" alt="Tempestade">
+                        <div class="card-content">
+                            <h3>Previsão para quinta-feira (31)</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit temporibus sapiente veniam optio esse..</p>
+                            <time>publicado em 26/10/2024</time>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="source/images/previsão.jpg" alt="Tempestade">
+                        <div class="card-content">
+                            <h3>Previsão para o final de semana</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit temporibus sapiente veniam optio esse..</p>
+                            <time>publicado em 26/10/2024</time>
+                        </div>
+                    </li>
+                </ul>
+                <ul data-tab-id="previsao" class="tab__content">
+                    <li>
+                        <img src="source/images/temporal.jpeg" alt="Tempestade">
+                        <div class="card-content">
+                            <h3>Previsão para segunda-feira (28)</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit temporibus sapiente veniam optio esse..</p>
+                            <time>publicado em 26/10/2024</time>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="source/images/temporal.jpeg" alt="Tempestade">
+                        <div class="card-content">
+                            <h3>Previsão para quinta-feira (31)</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit temporibus sapiente veniam optio esse..</p>
+                            <time>publicado em 26/10/2024</time>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="source/images/temporal.jpeg" alt="Tempestade">
+                        <div class="card-content">
+                            <h3>Previsão para o final de semana</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit temporibus sapiente veniam optio esse..</p>
+                            <time>publicado em 26/10/2024</time>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <a href="#">Ver todos</a>
+        </section>
+    </main>
+    
+    <script src="source/scripts/main.js"></script>
+</body>
+</html>
